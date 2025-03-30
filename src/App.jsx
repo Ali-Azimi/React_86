@@ -1,5 +1,8 @@
+import Box from "./components/Box";
 import ProductCard from "./components/Card";
+import Counter from "./components/Counter";
 import Header from "./components/Header";
+import ThumbGallery from "./components/ThumbGallery";
 
 const DATA = [
   {
@@ -274,8 +277,8 @@ function App() {
   return (
     <div>
       <Header />
-      <h1>HI MY FIRST COMPONENT</h1>
-      <section className="row">
+      <div className="container">
+        {/* <section className="row">
         {DATA.map((product) => {
           return (
             <ProductCard
@@ -287,7 +290,11 @@ function App() {
             />
           );
         })}
-      </section>
+      </section> */}
+        {/* <Counter /> */}
+        {/* <Box /> */}
+        <ThumbGallery />
+      </div>
     </div>
   );
 }

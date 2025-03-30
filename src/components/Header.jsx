@@ -5,17 +5,7 @@ function Header() {
     <div className="header">
       <div className="brand">
         <img src="images/vite.svg" />
-        <h1
-        // style={{
-        //   color: "red",
-        //   background: "yellow",
-        //   border: "3px solid black",
-        // }}
-
-        // className="harchi"
-        >
-          My Brand
-        </h1>
+        <h1>My Brand</h1>
       </div>
       <nav>
         <a href="#">Home</a>

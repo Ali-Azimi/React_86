@@ -1,18 +1,7 @@
 
 
 
-const ProductCard = ({title, price, freeShipping, discount, image, quantity}) => {
-    // const title = props.title;
-    // const price = props.price;
-    // es6 destruction
-    // const {title, price} = props;
-
-    const value = '';
-    // falsy values 0, '', false, undefined, null, NaN
-    if(value) {
-        console.log("HAST")
-    }
-
+const ProductCard = ({title = 'harchi', price, freeShipping, discount, image, quantity}) => {
     const calcDiscountedPrice = () => {
         return price - (price * discount / 100)
     }
@@ -22,10 +11,6 @@ const ProductCard = ({title, price, freeShipping, discount, image, quantity}) =>
             {freeShipping && <div className="badge">Free Shipping </div>}
             <img src={image} />
             <h3>{title}</h3>
-            {/* <p className={price > 200 ? 'red' : ''}>price: {price}$</p> */}
-
-
-            {/* price */}
             {
                 discount ? 
                 <div>
